@@ -6,9 +6,9 @@ try:
 except ImportError:
     from distutils.core import setup
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
-path, script = os.path.split(sys.argv[0])
-os.chdir(os.path.abspath(path))
+sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+#path, script = os.path.split(sys.argv[0])
+#os.chdir(os.path.abspath(path))
 
 install_requires = [
     'Flask==0.9',
