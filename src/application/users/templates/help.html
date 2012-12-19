@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}We can help{% endblock %}
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" href="/users/static/css/users.css" />
+{% endblock %}
+{% block content %}
+    <div class="row-fluid">
+        <h1>We can help</h1>
+    </div>
+    <div class="row-fluid">
+        <h2>Step 1: Become a member</h2>
+        <p>Becoming a member is easy. Just fill out the form on the
+            <a href="{{ url_for('users.register') }}">registration page</a>.
+        </p>
+    </div>
+    <div class="row-fluid">
+        <h2>Step 2: Go social</h2>
+        <p>You can associate your membership account with your social
+            networking accounts. Just
+            <a href="{{ url_for('users.login') }}">log in</a>,
+                go to your <a href="{{ url_for('users.home') }}">profile
+                page</a>, then click on the social network buttons and your
+            account will be added to your membership profile. After that,
+            you can log in any time with those social network accounts.
+        </p>
+    </div>
+    <div class="row-fluid">
+        <h2>Step 3: Keep your profile up to date</h2>
+        <p>Remember to keep your <a href="
+        {{ url_for('users.home') }}">profile</a> up to date. We use the phone
+            number and email address within your profile to keep in contact
+            with you.
+        </p>
+    </div>
+{% endblock %}

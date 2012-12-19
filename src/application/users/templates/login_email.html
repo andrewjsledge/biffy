@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" href="/users/static/css/users.css" />
+{% endblock %}
+{% block content %}
+    <div class="row-fluid">
+        <h2>Log in with your email address</h2>
+        <p>
+            {% from "forms/macros.html" import render_text_field %}
+            {% from "forms/macros.html" import render_password_field %}
+            <form method="POST" action="." class="form-horizontal">
+                {{ email_login_form.csrf_token }}
+                {{ render_text_field(email_login_form.email) }}
+                {{ render_password_field(email_login_form.password) }}
+                <input type="submit" value="Login" class="btn">
+            </form>
+        </p>
+    </div>
+    <div class="row-fluid">
+        <h2>
+            <a href="{{ url_for('users.help') }}" title="Need help?">
+                Need help?
+            </a>
+        </h2>
+    </div>
+{% endblock %}

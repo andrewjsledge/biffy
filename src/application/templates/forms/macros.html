@@ -1,0 +1,91 @@
+{% macro render_field(field) %}
+    <div class="form_field">
+        {{ field.label(class="label") }}
+        {% if field.errors %}
+            {% set css_class = 'has_error ' + kwargs.pop('class', '') %}
+            {{ field(class=css_class, **kwargs) }}
+            <ul class="errors">{% for error in field.errors %}<li>{{ error|e }}</li>{% endfor %}</ul>
+        {% else %}
+            {{ field(**kwargs) }}
+        {% endif %}
+    </div>
+{% endmacro %}
+
+{% macro render_text_field(field) %}
+    <div class="control-group{% if field.errors %} error{% endif %}">
+        <label class="control-label" for="{{ field.name }}">
+            {{ field.label }}</label>
+        <div class="controls">
+            <input type="text"
+                   id="{{ field.name }}"
+                {% if field.data == None %}
+                   placeholder="{{ field.description }}"
+                {% else %}
+                   value="{{ field.data }}"
+                {% endif %} name="{{ field.name }}">
+            <span class="help-inline">
+                {% if field.errors %}
+                    {{ field.errors[0]|e }}
+                {% endif %}
+            </span>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro render_password_field(field) %}
+    <div class="control-group{% if field.errors %} error{% endif %}">
+        <label class="control-label" for="{{ field.name }}">
+            {{ field.label }}</label>
+        <div class="controls">
+            <input type="password" id="{{ field.name }}"
+                   placeholder="{{ field.description }}"
+                   name="{{ field.name }}">
+            <span class="help-inline">
+                {% if field.errors %}
+                    {{ field.errors[0]|e }}
+                {% endif %}
+            </span>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro render_short_email_field(field) %}
+    <div class="control-group">
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-envelope"></i></span>
+                <input type="email" placeholder="Email address" id="inputEmail"
+                       name="{{ field.name }}">
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro render_short_password_field(field) %}
+    <div class="control-group">
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-key"></i></span>
+                <input type="password" placeholder="Password"
+                       id="inputPassword" name="{{ field.name }}">
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro render_short_confirm_password_set(p_field, c_field) %}
+    <div class="control-group">
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on"><i class="icon-key"></i></span>
+                <input type="password" placeholder="Password"
+                       id="inputPassword" name="{{ p_field.name }}">
+            </div>
+            <div class="input-prepend">
+                <span class="add-on-buffer"></span>
+                <input type="password" placeholder="Confirm Password"
+                       id="inputConfirmPassword" name="{{ c_field.name }}">
+            </div>
+        </div>
+    </div>
+{% endmacro %}
