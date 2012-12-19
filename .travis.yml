@@ -5,5 +5,7 @@ before_install:
   - sudo apt-get update
   - chmod +x setup.py
 install:
-  - pip install -r requirements.txt --use-mirrors
+  - pip install -r requirements.txt --quiet --use-mirrors
   - pip install . --quiet --use-mirrors
+
+script: nosetests tests
