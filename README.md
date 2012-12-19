@@ -14,4 +14,5 @@ modern day web application. This includes, but is not limited to:
 * Easy to use
 * Mobile ready
 * An easy to use platform for even the novice developer
-* Powered by bacon
+
+Powered by bacon.
