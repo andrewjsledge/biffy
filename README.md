@@ -1,6 +1,9 @@
 Biffy
 =====
 
+[![Build Status](https://travis-ci.org/andrewjsledge/biffy.png)](https://travis-ci.org/andrewjsledge/biffy)
+
+
 The Batteries Included Flask-based Framework.
 
 Biffy is a web framework based on Flask, good intentions,
