@@ -19,3 +19,5 @@ modern day web application. This includes, but is not limited to:
 * An easy to use platform for even the novice developer
 
 Powered by bacon.
+
+[Documentation](https://biffy.readthedocs.org/)
