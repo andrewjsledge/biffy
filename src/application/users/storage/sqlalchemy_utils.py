@@ -4,6 +4,16 @@ from application.users.storage.sqlalchemy_models import Session, \
     ServiceAccount, User
 
 def get_session(token=None, service_account=None):
+    """
+    Session lookup from the database.
+
+    :param token:
+    :type token:
+    :param service_account:
+    :type service_account:
+    :return:
+    :rtype:
+    """
     if token:
         return Session.query.filter_by(token=token).first()
     elif service_account:
