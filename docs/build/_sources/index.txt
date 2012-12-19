@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Biffy: The Batteries-Included Flask-based Framework's documentation!
-===============================================================================
+Welcome to Biffy
+================
 
 The Batteries Included Flask-based Framework.
 
@@ -15,9 +15,9 @@ modern day web application. This includes, but is not limited to:
 
 * User authentication with social services (Google, Facebook, Twitter)
 * Posting of application updates to social accounts
-* Clean look and feel
-* Easy to use
-* Mobile ready
+* Clean look and feel (courtesy of Twitter Bootstrap)
+* Easy to develop and extend
+* Mobile ready (responsive design)
 * An easy to use platform for even the novice developer
 
 Powered by bacon.
