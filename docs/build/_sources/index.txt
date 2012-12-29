@@ -6,7 +6,7 @@
 Welcome to Biffy
 ================
 
-The Batteries Included Flask-based Framework.
+The Batteries-Included Flask-based Framework.
 
 Biffy is a web framework based on Flask, good intentions,
 but mostly laziness. The desire here is to create a boilerplate-esque
@@ -20,7 +20,7 @@ modern day web application. This includes, but is not limited to:
 * Mobile ready (responsive design)
 * An easy to use platform for even the novice developer
 
-Powered by bacon.
+Powered by beef.
 
 Contents:
 
@@ -28,7 +28,7 @@ Contents:
    :maxdepth: 2
    :glob:
 
-   test/*
+   design
 
 
 

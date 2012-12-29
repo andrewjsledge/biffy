@@ -28,7 +28,7 @@ Contents:
    :maxdepth: 2
    :glob:
 
-   test/*
+   design
 
 
 
