@@ -51,7 +51,22 @@
 <h1>Design Philosophy<a class="headerlink" href="#design-philosophy" title="Permalink to this headline">¶</a></h1>
 <p>The idea is to provide a way for quick deployment for Flask applications,
 and to provide out-of-the-box functionality for many use cases. With the same
-code base you can deploy many different applications.</p>
+code base you can deploy many different applications The design philosophy
+behind biffy is better described with an example:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>biffy --blueprints blog,contact --port 8008
+</pre></div>
+</div>
+<p>This command tells biffy to:</p>
+<ul class="simple">
+<li>Use the blueprints blog and contact form</li>
+<li>Use the built in WSGI service</li>
+</ul>
+<p>This is okay for very small or development sites. But what about production
+sites? You will need to use a production WSGI server.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>biffy --wsgi uwsgi --wsgi-config uwsgi.ini --blueprints blog,
+contact --port 8008
+</pre></div>
+</div>
 </div>
 
 
