@@ -51,8 +51,40 @@
 <h1>Design Philosophy<a class="headerlink" href="#design-philosophy" title="Permalink to this headline">¶</a></h1>
 <p>The idea is to provide a way for quick deployment for Flask applications,
 and to provide out-of-the-box functionality for many use cases. With the same
-code base you can deploy many different applications The design philosophy
-behind biffy is better described with an example:</p>
+code base you can deploy many different applications.</p>
+<p>Every developer wishes that they could have that magic bullet framework that
+would solve most of their problems. Unfortunately that magic bullet doesn&#8217;t
+and probably will never exist, but we can try to get close. The spirit of
+Biffy is that frameworks should be modular, come with tons of features,
+and (most important) easy to use.</p>
+<div class="section" id="modular">
+<h2>Modular<a class="headerlink" href="#modular" title="Permalink to this headline">¶</a></h2>
+<p>Flask implements modularity in the form of <a class="reference external" href="http://flask.pocoo.org/docs/blueprints/">Blueprints</a>. Biffy takes this
+concept and bolts on the following capabilities:</p>
+<ul class="simple">
+<li>Plug and play according to what you need at deployment</li>
+<li>Blueprints can advertise and offer services to other blueprints</li>
+<li>Consistent layout for ease of development</li>
+</ul>
+</div>
+<div class="section" id="tons-of-features">
+<h2>Tons of Features<a class="headerlink" href="#tons-of-features" title="Permalink to this headline">¶</a></h2>
+<p>This is the &#8220;Batteries-Included&#8221; part of Biffy. A good web framework should
+be able to get you up and running with some sort of base functionality right
+out of the box.</p>
+</div>
+<div class="section" id="easy-to-use-extending">
+<h2>Easy to Use: Extending<a class="headerlink" href="#easy-to-use-extending" title="Permalink to this headline">¶</a></h2>
+<p>It should be simple to add to the Biffy base without a lot of work and it
+should be able to be done very quickly. Biffy comes with blueprint creator.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>biffy-create-blueprint.py my_custom_blueprint
+</pre></div>
+</div>
+</div>
+<div class="section" id="easy-to-use-deployment">
+<h2>Easy to Use: Deployment<a class="headerlink" href="#easy-to-use-deployment" title="Permalink to this headline">¶</a></h2>
+<p>Deployment can be a frustrating task. Biffy wants to make that easy for you,
+and is best demonstrated by an example:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>biffy-create-app.py blog --blueprints blog,contact
 </pre></div>
 </div>
@@ -69,6 +101,7 @@ several sites that will look exactly the same. That is made easy by</p>
 </pre></div>
 </div>
 </div>
+</div>
 
 
           </div>
@@ -76,6 +109,17 @@ several sites that will look exactly the same. That is made easy by</p>
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Design Philosophy</a><ul>
+<li><a class="reference internal" href="#modular">Modular</a></li>
+<li><a class="reference internal" href="#tons-of-features">Tons of Features</a></li>
+<li><a class="reference internal" href="#easy-to-use-extending">Easy to Use: Extending</a></li>
+<li><a class="reference internal" href="#easy-to-use-deployment">Easy to Use: Deployment</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="index.html"
                         title="previous chapter">Welcome to Biffy</a></p>
