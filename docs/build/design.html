@@ -71,7 +71,8 @@ concept and bolts on the following capabilities:</p>
 <h2>Tons of Features<a class="headerlink" href="#tons-of-features" title="Permalink to this headline">¶</a></h2>
 <p>This is the &#8220;Batteries-Included&#8221; part of Biffy. A good web framework should
 be able to get you up and running with some sort of base functionality right
-out of the box.</p>
+out of the box. Planned blueprints include a blog, a contact form,
+a twitter client, a facebook client, a calendar, and maybe a few more.</p>
 </div>
 <div class="section" id="easy-to-use-extending">
 <h2>Easy to Use: Extending<a class="headerlink" href="#easy-to-use-extending" title="Permalink to this headline">¶</a></h2>
@@ -97,9 +98,14 @@ database.ini
 </div>
 <p>So suppose you want to use a boilerplate configuration because you have
 several sites that will look exactly the same. That is made easy by</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>biffy-create-app.py blog --biffy-config recipe.ini
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>biffy-create-app.py blog --biffy-recipe recipe.ini
 </pre></div>
 </div>
+<p>So right now you&#8217;re probably thinking that the goal is to reinvent <a class="reference external" href="https://djangoproject.com">Django</a>.
+Well, maybe a little bit. The Flask internals are so much more lightweight
+and if you know anything about Django&#8217;s history it&#8217;s that the ORM hasn&#8217;t
+always been as portable or flexible (though, it is getting better). This
+project seeks to fulfill those needs and more.</p>
 </div>
 </div>
 

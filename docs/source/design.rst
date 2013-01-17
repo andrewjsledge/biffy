@@ -26,7 +26,8 @@ Tons of Features
 
 This is the "Batteries-Included" part of Biffy. A good web framework should
 be able to get you up and running with some sort of base functionality right
-out of the box.
+out of the box. Planned blueprints include a blog, a contact form,
+a twitter client, a facebook client, a calendar, and maybe a few more.
 
 Easy to Use: Extending
 ----------------------
@@ -62,7 +63,14 @@ several sites that will look exactly the same. That is made easy by
 
 .. code-block:: bash
 
-    $ biffy-create-app.py blog --biffy-config recipe.ini
+    $ biffy-create-app.py blog --biffy-recipe recipe.ini
 
+
+So right now you're probably thinking that the goal is to reinvent Django_.
+Well, maybe a little bit. The Flask internals are so much more lightweight
+and if you know anything about Django's history it's that the ORM hasn't
+always been as portable or flexible (though, it is getting better). This
+project seeks to fulfill those needs and more.
 
 .. _Blueprints: http://flask.pocoo.org/docs/blueprints/
+.. _Django: https://djangoproject.com

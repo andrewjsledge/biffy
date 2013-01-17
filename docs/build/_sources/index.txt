@@ -29,6 +29,7 @@ Contents:
    :glob:
 
    design
+   included_modules
 
 
 
