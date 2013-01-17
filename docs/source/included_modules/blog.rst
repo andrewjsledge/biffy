@@ -1,4 +1,4 @@
-Users
-=====
+Blog
+====
 
 More information coming soon.
