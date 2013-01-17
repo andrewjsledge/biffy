@@ -29,8 +29,8 @@ Contents:
    :glob:
 
    design
-   included_modules
-       users
+   Included Modules
+       :doc:`/included_modules/users`
 
 
 
