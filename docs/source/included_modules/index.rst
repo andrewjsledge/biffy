@@ -1,4 +1,8 @@
 Included Modules
 ================
 
-:doc:`Users </users>`
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   users

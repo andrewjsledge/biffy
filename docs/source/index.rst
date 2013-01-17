@@ -25,12 +25,11 @@ Powered by beef.
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
 
    design
-   Included Modules
-       :doc:`/included_modules/users`
+   included_modules
 
 
 
